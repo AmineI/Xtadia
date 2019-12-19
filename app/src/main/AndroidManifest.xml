@@ -16,7 +16,7 @@
         android:value="Module to allow playing on Stadia over any connection and any phone."/>
     <meta-data
         android:name="xposedminversion"
-        android:value="53" />
+        android:value="82" />
     </application>
 
 

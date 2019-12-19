@@ -10,7 +10,7 @@ Be warned that it was limited for a reason, and you may not have an optimal expe
 Credits
 ------
 
- - rovo89 and all contributors of the (Xposed framework)[https://github.com/rovo89/Xposed)
+ - rovo89 and all contributors of the (Xposed framework)[https://github.com/rovo89/Xposed]
 
  - itsuki-t for his module [FakeDeviceData](https://github.com/itsuki-t/FakeDeviceData)
 

@@ -24,8 +24,21 @@ public class Xtadia implements IXposedHookLoadPackage {
         this.lpparam = lpparam;
         if (DEBUG_MODE) XposedBridge.log("Xtadia - Hooking app !");
 
+        HookPhoneModel();
+
         HookConnectionType();
 
+    }
+
+    void HookPhoneModel() {
+
+        Class<?> buildClass = XposedHelpers.findClass("android.os.Build", lpparam.classLoader);
+
+        if (DEBUG_MODE) XposedBridge.log("Hook - MANUFACTURER = Google");
+        XposedHelpers.setStaticObjectField(buildClass, "MANUFACTURER", "Google");
+
+        if (DEBUG_MODE) XposedBridge.log("Hook - MODEL = Pixel 4");
+        XposedHelpers.setStaticObjectField(buildClass, "MODEL", "Pixel 4");
     }
 
     void HookConnectionType() {
